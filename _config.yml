@@ -1,0 +1,51 @@
+# Site
+name: SMA's Blog
+description: 'Hub for software architecture, design and engineering, featuring key technology insights, updates and tutorials.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: 'imsma'
+email: 'write@sma.im'
+mailchimp-list: 'https://wizlinx.us18.list-manage.com/subscribe/post?u=1bebdb0ff84c80d76cad37237&amp;id=6cac6e028e'
+# Google Analytics
+google_analytics: UA-50486873-1
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: sal
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
