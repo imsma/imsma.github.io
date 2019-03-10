@@ -1,7 +1,7 @@
 ---
 title: "About Me and My Blog"
 permalink: "/about.html"
-image: "/assets/images/about-3.png"
+image: "/assets/images/about.png"
 ---
 Hi, I’m Shaukat Mahmood Ahmad, the Co-Founder of Wizlinx (www.wizlinx.com) and author of SMA’s blog (www.sma.im).
 
