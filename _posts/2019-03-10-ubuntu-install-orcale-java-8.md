@@ -7,6 +7,8 @@ image: assets/images/java-1.jpg
 tags: [featured]
 ---
 
+In this article I will explain how to install [Oracle Java](https://www.oracle.com/java/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/). I will explain the installation process of both Oracle Java 8 and 9.
+
 # Install Oracle Java 8, 9 in Ubuntu 16.04
 
 ## 1. Add the PPA
