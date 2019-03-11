@@ -3,7 +3,7 @@ title: "About Me and My Blog"
 permalink: "/about.html"
 image: "/assets/images/about.jpg"
 ---
-Hi, I’m [Shaukat Mahmood Ahmad](https://www.linkedin.com/in/shaukat-mahmood-ahmad-b8123319/), the Co-Founder of [Wizlinx](https://www.wizlinx.com) and author of [SMA’s blog](https://www.sma.im).
+Hi, I’m [Shaukat Mahmood Ahmad](https://www.linkedin.com/in/shaukat-mahmood-ahmad-b8123319/), Co-Founder, CTO at [Wizlinx](https://www.wizlinx.com) and author of [SMA’s blog](https://www.sma.im).
 
 I am starting (actually re-starting) this as a personal blog to share my learning on tools and strategies with technology professionals to build solutions for the future.
 

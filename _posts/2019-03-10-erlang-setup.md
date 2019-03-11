@@ -5,6 +5,9 @@ author: sma
 categories: [ Erlang ]
 image: assets/images/99.jpg
 ---
+
+Erlang is a general-purpose, concurrent, functional programming language. Erlang is best suited to design distributed, fault-tolerant, soft real-time ,highly available and Hot swapable software systems.
+
 # Install Erlang
 
 This article will explain how to install [Erlang](https://www.erlang.org/) on differnt platformms.

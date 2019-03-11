@@ -1,6 +1,7 @@
 # Site
 name: SMA's Blog
-description: 'Hub for software architecture, design and engineering, featuring key technology insights, updates and tutorials.'
+title: SMA's Blog
+description: '>>>>>>>Hub for software architecture, design and engineering, featuring key technology insights, updates and tutorials.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
