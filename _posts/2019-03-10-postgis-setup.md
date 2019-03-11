@@ -3,7 +3,7 @@ layout: post
 title:  "Install PostGIS"
 author: sma
 categories: [ PostgresSQL, PostGIS, GIS ]
-image: assets/images/gis-map.png
+image: assets/images/gis-map.jpg
 tags: [featured]
 ---
 

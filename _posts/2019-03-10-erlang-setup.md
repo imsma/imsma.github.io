@@ -3,7 +3,7 @@ layout: post
 title:  "Install Erlang"
 author: sma
 categories: [ Erlang ]
-image: assets/images/99.png
+image: assets/images/99.jpg
 ---
 # Install Erlang
 

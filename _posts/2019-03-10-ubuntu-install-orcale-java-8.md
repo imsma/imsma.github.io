@@ -3,7 +3,7 @@ layout: post
 title:  "Install Oracle Java 8, 9 in Ubuntu 16.04"
 author: sma
 categories: [ Java, Ubuntu ]
-image: assets/images/java-1.png
+image: assets/images/java-1.jpg
 tags: [featured]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Setup EMQX broker node on Ubuntu Server"
 author: sma
 categories: [ MQTT,emq,IoT,M2M ]
-image: assets/images/city-downtown-light-streaks-985700.png
+image: assets/images/city-downtown-light.jpg
 ---
 
 [EMQX](https://www.emqx.io/) a distributed, highly available and highly scalable message broker. **EMQX** is designed and built using [Erlang/OTP](https://github.com/erlang/otp), and supports all major **IoT** protocols to develop scalable solutions for **M2M** and **mobile application** messaging.

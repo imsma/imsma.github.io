@@ -3,7 +3,7 @@ layout: post
 title:  "Setup Elasticsearch on Ubuntu Server"
 author: sma
 categories: [ Elasticsearch, Ubuntu ]
-image: assets/images/anthony-martino-335460-unsplash.png
+image: assets/images/anthony-martino-335460-unsplash.jpg
 ---
 
 In this article I will explain how to install [Elasticsearch](https://www.elastic.co/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).
