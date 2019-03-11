@@ -3,7 +3,7 @@ layout: post
 title:  "Test Draft Post"
 author: sma
 categories: [ draft, sma ]
-image: assets/images/anthony-martino-335460-unsplash.png
+image: assets/images/anthony-martino-335460-unsplash.jpg
 ---
 
 This is a draft post to test the feature.

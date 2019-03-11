@@ -3,7 +3,7 @@ layout: post
 title:  "Install MySQL 5.7 on macOS"
 author: sma
 categories: [ MySQL, macOS ]
-image: assets/images/server-grid.png
+image: assets/images/server-grid.jpg
 tags: [featured]
 ---
 
@@ -60,7 +60,7 @@ mysqladmin -u root password 'yourpassword'
 
 You can use [Sequel Pro](http://www.sequelpro.com/) GUI client to manage MySQL
 
-![Sequel Pro]({{ site.baseurl }}/assets/images/sequel-pro.png)
+![Sequel Pro]({{ site.baseurl }}/assets/images/sequel-pro.jpg)
 
 
 
