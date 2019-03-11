@@ -15,7 +15,7 @@ permalink: "/categories.html"
         {% for post in pages_list %}
         {% if post.title != null %}
           {% if group == null or group == post.group %}
-          <li><a class="text-muted" href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></li>
+          <li><a class="text-muted" href="{{post.url | relative_url}}">{{ post.title }}</a></li>
           {% endif %}
         {% endif %}
         {% endfor %}
