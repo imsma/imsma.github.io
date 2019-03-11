@@ -3,7 +3,7 @@ title: "About Me and My Blog"
 permalink: "/about.html"
 image: "/assets/images/about.png"
 ---
-Hi, I’m Shaukat Mahmood Ahmad, the Co-Founder of Wizlinx (www.wizlinx.com) and author of SMA’s blog (www.sma.im).
+Hi, I’m [Shaukat Mahmood Ahmad](https://www.linkedin.com/in/shaukat-mahmood-ahmad-b8123319/), the Co-Founder of [Wizlinx](https://www.wizlinx.com) and author of [SMA’s blog](https://www.sma.im).
 
 I am starting (actually re-starting) this as a personal blog to share my learning on tools and strategies with technology professionals to build solutions for the future.
 
@@ -15,8 +15,11 @@ This blog will primarily target following areas.
 -	Enterprise Integration
 -	GIS and Location Aware Systems.
 -	Agile and DevOps
+
  
-Happy Learning.
-SMA
+_Happy Learning._
+**SMA**
 
+***
 
+Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
