@@ -4,6 +4,7 @@ title:  "Install and configure Samba on Ubuntu Server 16.04"
 author: sma
 categories: [ Samba, Ubuntu ]
 image: assets/images/sharing-1068523.jpg
+description: "Install and configure Samba on Ubuntu Server 16.04"
 ---
 
 [Samba](https://www.samba.org) file server is implementation of [SMB (Server Message Block)](https://en.wikipedia.org/wiki/Server_Message_Block) networking protocol. **Samba** file server allows you to share your files with users running **Windows** and **macOS**.

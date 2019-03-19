@@ -5,6 +5,7 @@ author: sma
 categories: [ PostgresSQL, Ubuntu ]
 image: assets/images/computer-connection-data-1181675.jpg
 tags: [featured]
+description: "Install PostgresSQL 11 on Ubuntu Server"
 ---
 
 In this article I will explain how to install [PostgresSQL 11](https://www.postgresql.org/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).

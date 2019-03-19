@@ -4,6 +4,7 @@ title:  "Install Erlang"
 author: sma
 categories: [ Erlang ]
 image: assets/images/99.jpg
+description: "Install Erlang"
 ---
 
 Erlang is a general-purpose, concurrent, functional programming language. Erlang is best suited to design distributed, fault-tolerant, soft real-time ,highly available and Hot swapable software systems.
