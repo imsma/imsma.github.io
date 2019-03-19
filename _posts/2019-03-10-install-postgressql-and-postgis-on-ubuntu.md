@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Install PostGIS"
+title:  "Install PostgresSQL and PostGIS on Ubuntu"
 author: sma
 categories: [ PostgresSQL, PostGIS, GIS ]
 image: assets/images/gis-map.jpg
 tags: [featured]
+description: "Install PostgresSQL and PostGIS on Ubuntu"
 ---
 
 In this article I will explain how to install [PostGIS](https://postgis.net/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).

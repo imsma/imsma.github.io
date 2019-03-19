@@ -4,6 +4,7 @@ title:  "Setup Elasticsearch on Ubuntu Server"
 author: sma
 categories: [ Elasticsearch, Ubuntu ]
 image: assets/images/anthony-martino-335460-unsplash.jpg
+description: "Setup Elasticsearch on Ubuntu Server"
 ---
 
 Elasticsearch is a open source search engine written in Java and based on Apache Lucene library. Elasticsearch is distributed search engine that supports full-text search with an HTTP web (REST) interface.  
