@@ -11,7 +11,7 @@ description: "Setup EMQX broker node on Ubuntu Server"
 
 Following steps will help you setup **EMQX** broker on **Ubuntu Server**.
 
-#### [Install erlang]({{ site.baseurl }}{% post_url 2019-03-10-erlang-setup %})
+#### [Install erlang]({{ site.baseurl }}{% post_url 2019-03-10-install-erlang %})
 
 ```
 $ apt-get install erlang
