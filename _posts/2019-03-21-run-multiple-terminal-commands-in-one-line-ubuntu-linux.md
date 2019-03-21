@@ -84,10 +84,10 @@ You can combine `AND (&&)` and `OR (||)` operators to simulate `if ... else` sce
 ping -c 3 google.com1 && echo "Your internet connection is OK"  || echo "You are not connected to internet"
 ```
 
-That's it, hope you enjoyed it. This was part of *using operators on linux command line  shell /terminal*, in next part of this article I will show more operators to enhance your productivity while working with *linux shell commands*. You like this article, have some questions or suggestions please let us know in the comments section.
+That's it, hope you enjoyed it. This was part one of *using operators on linux command line  shell /terminal*, in next part of this article I will show more operators to enhance your productivity while working with *linux shell commands*. You like this article, have some questions or suggestions please let us know in the comments section.
 
+Thanks and Happy Learning!
 
-
-
+    
 
 
