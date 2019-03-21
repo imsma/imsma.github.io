@@ -31,9 +31,18 @@ $ port install erlang
 ```
 
 ## Ubuntu and Debian
-On Ubunutu and other Debian linux OS you can install [erlang](https://www.erlang.org/) using [apt](https://wiki.debian.org/Apt) package manager. To install [erlang](https://www.erlang.org/) run following command from shell.
+On Ubunutu and other Debian linux OS you can install [erlang](https://www.erlang.org/) using [apt](https://wiki.debian.org/Apt) package manager. To install [erlang](https://www.erlang.org/) run following commands from shell.
+
+1. Update apt repository.
+
 ```
-$ apt-get install erlang
+sudo apt-get update
+```
+
+2. Install [erlang](https://www.erlang.org/).
+
+```
+$ sudo apt-get install erlang
 ```
 
 ## Fedora
