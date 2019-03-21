@@ -4,7 +4,6 @@ title:  "Install MySQL 5.7 on macOS"
 author: sma
 categories: [ MySQL, macOS ]
 image: assets/images/server-grid.jpg
-tags: [featured]
 description: "Install MySQL 5.7 on macOS"
 ---
 
