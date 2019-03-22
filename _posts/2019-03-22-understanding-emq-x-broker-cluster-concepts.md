@@ -2,7 +2,7 @@
 layout: post
 title:  "Understanding EMQ X broker cluster concepts"
 author: sma
-categories: [ MQTT,emq,IoT,M2M ]
+categories: [ MQTT,EMQ,EMQX,IoT,M2M ]
 image: assets/images/abstract-ai-art-373543.jpg
 description: "Understanding EMQ X broker cluster concepts"
 tags: [featured]
@@ -50,8 +50,8 @@ A *global route table* with **topic** and **nodes** mappings is replicated to al
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
 
+Thanks and Happy Learning!
+
 ## Links of other articles in this series
 1. [Setup EMQ X broker node on Ubuntu Server]({{ site.baseurl }}{% post_url 2019-03-10-setup-emqx-broker-node-on-ubuntu %})
-
-
-Thanks and Happy Learning!
+2. [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
