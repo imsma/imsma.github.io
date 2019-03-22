@@ -302,6 +302,11 @@ listener.wss.external = 8084
 ```
 
 
+
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
 
 Thanks and Happy Learning!
+
+## Links of other articles in this series
+1. [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
+2. [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
