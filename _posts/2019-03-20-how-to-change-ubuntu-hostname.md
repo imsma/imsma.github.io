@@ -3,7 +3,7 @@ layout: post
 title:  "How to change Ubuntu system's Hostname"
 author: sma
 categories: [ Ubuntu ]
-image: assets/images/analogue-blur-business-159282.jpg
+image: assets/images/posts/analogue-blur-business-159282.jpg
 description: "How to change Hostname / Computer Name in Ubuntu"
 
 ---

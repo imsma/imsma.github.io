@@ -3,7 +3,7 @@ layout: post
 title:  "Install and configure Samba on Ubuntu Server 16.04"
 author: sma
 categories: [ Samba, Ubuntu ]
-image: assets/images/sharing-1068523.jpg
+image: assets/images/posts/sharing-1068523.jpg
 description: "Install and configure Samba on Ubuntu Server 16.04"
 ---
 
@@ -84,15 +84,15 @@ sudo smbpasswd -a <username>
 ### On macOS
 1. Open finder and click on `Go > Connect to Server` menu item or press `Cmd + K` shortcut key.
 
-![macOS connect to server / smb share]({{ site.baseurl }}/assets/images/macos-connect-server-menu.jpg)
+![macOS connect to server / smb share]({{ site.baseurl }}/assets/images/posts/macos-connect-server-menu.jpg)
 
 2. Enter the `smb://<IP-ADDRESS>/myshare` in *Server Address* input box and Click `Connect` button.
 
-![macOS connect to server dialog]({{ site.baseurl }}/assets/images/macOS-connect-server-dialog.jpg)
+![macOS connect to server dialog]({{ site.baseurl }}/assets/images/posts/macOS-connect-server-dialog.jpg)
 
 3. Choose `Registered User` option, enter `user name`, `password` and click `Connect` button to open the *Samba share*.
 
-![macOS connect to Samba / smb share]({{ site.baseurl }}/assets/images/connect-smb-share.jpg)
+![macOS connect to Samba / smb share]({{ site.baseurl }}/assets/images/posts/connect-smb-share.jpg)
 
 ### On Microsoft Windows
 

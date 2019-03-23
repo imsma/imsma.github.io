@@ -3,7 +3,7 @@ layout: post
 title:  "Clustering EMQ X Automatically:dns, using a DNA A record"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/abstract-ai-art-373543.jpg
+image: assets/images/posts/abstract-ai-art-373543.jpg
 description: "How to setup EMQ X cluster automatically using a DNA A record?"
 tags: [featured]
 ---

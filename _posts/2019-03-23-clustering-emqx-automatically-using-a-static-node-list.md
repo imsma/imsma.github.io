@@ -3,7 +3,7 @@ layout: post
 title:  "Clustering EMQ X Automatically:static, using a static node list"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/cables-close-up-connection-159304.jpg
+image: assets/images/posts/cables-close-up-connection-159304.jpg
 description: "How to setup EMQ X cluster automatically using a static node list?"
 tags: [featured]
 ---
@@ -100,7 +100,8 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 
 Thanks and Happy Learning!
 
-## Links of other articles in this series
+## Other articles in MQTT / EMQ X  series
 - [Setup EMQ X broker node on Ubuntu Server]({{ site.baseurl }}{% post_url 2019-03-10-setup-emqx-broker-node-on-ubuntu %})
 - [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
 - [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
+- [Load Balancer for EMQ X Cluster]({{ site.baseurl }}{% post_url 2019-03-24-load-balancer-for-emq-x-cluster %})

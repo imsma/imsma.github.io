@@ -3,7 +3,7 @@ layout: post
 title:  "Why Java doesn't support operator overloading?"
 author: sma
 categories: [ Java ]
-image: assets/images/bridge-cars-evening-344544.jpg
+image: assets/images/posts/bridge-cars-evening-344544.jpg
 tags: [featured]
 ---
 
