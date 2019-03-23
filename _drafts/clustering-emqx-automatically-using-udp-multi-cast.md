@@ -2,7 +2,7 @@
 layout: post
 title:  "Clustering EMQ X Automatically:mcast, using UDP multi-cast"
 author: sma
-categories: [ MQTT,EMQ,EMQX,IoT,M2M ]
+categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/abstract-ai-art-373543.jpg
 description: "How to setup EMQ X cluster automatically using UDP multi-cast?"
 tags: [featured]

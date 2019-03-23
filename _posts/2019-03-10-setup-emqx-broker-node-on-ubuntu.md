@@ -2,7 +2,7 @@
 layout: post
 title:  "Setup EMQ X broker node on Ubuntu Server"
 author: sma
-categories: [ MQTT,emq,IoT,M2M ]
+categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/city-downtown-light.jpg
 description: "Setup EMQX broker node on Ubuntu Server"
 ---
@@ -308,5 +308,6 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 Thanks and Happy Learning!
 
 ## Links of other articles in this series
-1. [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
-2. [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
+- [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
+- [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
+- [Clustering EMQ X Automatically:static, using a static node list]({{ site.baseurl }}{% post_url 2019-03-23-clustering-emqx-automatically-using-a-static-node-list %})
