@@ -3,7 +3,7 @@ layout: post
 title:  "Setup Elasticsearch on Ubuntu Server"
 author: sma
 categories: [ Elasticsearch, Ubuntu ]
-image: assets/images/anthony-martino-335460-unsplash.jpg
+image: assets/images/posts/anthony-martino-335460-unsplash.jpg
 description: "Setup Elasticsearch on Ubuntu Server"
 ---
 

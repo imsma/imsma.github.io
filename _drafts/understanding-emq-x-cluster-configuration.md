@@ -3,7 +3,7 @@ layout: post
 title:  "Understanding EMQ X Cluster Configuration"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/abstract-ai-art-373543.jpg
+image: assets/images/posts/abstract-ai-art-373543.jpg
 description: "Setup EMQ X broker cluster on Ubuntu Server"
 tags: [featured]
 ---

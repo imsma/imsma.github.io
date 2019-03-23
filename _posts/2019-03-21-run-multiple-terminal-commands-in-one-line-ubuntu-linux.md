@@ -3,7 +3,7 @@ layout: post
 title:  "How to run multiple terminal commands in one line in Ubuntu / Linux?"
 author: sma
 categories: [ Linux, Ubuntu ]
-image: assets/images/bridge-buildings-business-2019059.jpg
+image: assets/images/posts/bridge-buildings-business-2019059.jpg
 tags: [featured]
 description: "How to run multiple terminal commands in one line in Ubuntu / Linux?"
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "EMQ X deployment with NGINX Plus Load Balancer on private network"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/abstract-ai-art-373543.jpg
+image: assets/images/posts/abstract-ai-art-373543.jpg
 description: "How to deploy EMQ X cluster with ELB Load Balancer on private network?"
 tags: [featured]
 ---

@@ -12,6 +12,21 @@ This blog will primarily target following areas.
 -	GIS and Location Aware Systems.
 -	Agile and DevOps
 
+## Style Guide
+
+### Post Image
+**Type** image/jpeg
+**Dimensions** 550 px X 367 px
+**Resolution** 72 px /Inch
+
+### Post Thumbnail Image
+**Type** image/jpeg
+**Dimensions** 155 px X 103 px
+**Resolution** 72 px /Inch
+**Prefix** th-
+
+
+
  
 _Happy Learning._
 

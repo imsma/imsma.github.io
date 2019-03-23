@@ -3,9 +3,8 @@ layout: post
 title:  "How to manually setup EMQX cluster?"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/agreement-business-clapping-990817.jpg
+image: assets/images/posts/agreement-business-clapping-990817.jpg
 description: "How to manually setup EMQ X cluster?"
-tags: [featured]
 ---
 
 In this article we will explore how to setup *EMQ X Broker Cluster* manually using *CLI (Command Line Interface)*. We will create *EMQX broker cluster* of 3 nodes.
@@ -150,8 +149,8 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 
 Thanks and Happy Learning!
 
-## Links of other articles in this series
-## Links of other articles in this series
+## Other articles in MQTT / EMQ X  series
 - [Setup EMQ X broker node on Ubuntu Server]({{ site.baseurl }}{% post_url 2019-03-10-setup-emqx-broker-node-on-ubuntu %})
 - [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
 - [Clustering EMQ X Automatically:static, using a static node list]({{ site.baseurl }}{% post_url 2019-03-23-clustering-emqx-automatically-using-a-static-node-list %})
+- [Load Balancer for EMQ X Cluster]({{ site.baseurl }}{% post_url 2019-03-24-load-balancer-for-emq-x-cluster %})

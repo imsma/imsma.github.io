@@ -3,7 +3,7 @@ layout: post
 title:  "Install PostgresSQL and PostGIS on Ubuntu"
 author: sma
 categories: [ PostgresSQL, PostGIS, GIS ]
-image: assets/images/gis-map.jpg
+image: assets/images/posts/gis-map.jpg
 tags: [featured]
 description: "Install PostgresSQL and PostGIS on Ubuntu"
 ---

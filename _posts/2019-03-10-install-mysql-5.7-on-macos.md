@@ -3,7 +3,7 @@ layout: post
 title:  "Install MySQL 5.7 on macOS"
 author: sma
 categories: [ MySQL, macOS ]
-image: assets/images/server-grid.jpg
+image: assets/images/posts/server-grid.jpg
 description: "Install MySQL 5.7 on macOS"
 ---
 

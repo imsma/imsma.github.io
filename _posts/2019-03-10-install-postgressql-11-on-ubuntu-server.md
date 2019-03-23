@@ -3,7 +3,7 @@ layout: post
 title:  "Install PostgresSQL 11 on Ubuntu Server"
 author: sma
 categories: [ PostgresSQL, Ubuntu ]
-image: assets/images/computer-connection-data-1181675.jpg
+image: assets/images/posts/computer-connection-data-1181675.jpg
 description: "Install PostgresSQL 11 on Ubuntu Server"
 ---
 

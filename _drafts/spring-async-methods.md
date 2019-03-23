@@ -3,7 +3,7 @@ layout: post
 title:  "Spring Java - Working with Asynchronous (async) Methods"
 author: sma
 categories: [ Java, Spring, Spring, Spring-boot ]
-image: assets/images/bridge-cars-evening-344544.jpg
+image: assets/images/posts/bridge-cars-evening-344544.jpg
 tags: [featured]
 ---
 
@@ -24,7 +24,7 @@ We will build **GitHub User Information** lookup service in this article. Let's 
 | Artifact              | spring-async      |
 | Dependencies to add   | Web               |
 
-![Spring Initializr]({{ site.baseurl }}/assets/images/spring-initializr.jpg)
+![Spring Initializr]({{ site.baseurl }}/assets/images/posts/spring-initializr.jpg)
 
 Click the **Generate Project** button to download the project. Unzip and open the  project in your favorite IDE, I am using **IDEA IntelliJ**.
 

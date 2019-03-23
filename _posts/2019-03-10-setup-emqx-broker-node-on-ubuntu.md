@@ -3,7 +3,7 @@ layout: post
 title:  "Setup EMQ X broker node on Ubuntu Server"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
-image: assets/images/city-downtown-light.jpg
+image: assets/images/posts/city-downtown-light.jpg
 description: "Setup EMQX broker node on Ubuntu Server"
 ---
 
@@ -200,10 +200,10 @@ http://localhost:18083
 http://IP_ADDRESS:18083
 ```
 
-![EMQ X Web Dashboard login page]({{ site.baseurl }}/assets/images/emq-x-web-dashboard-login.jpg)
+![EMQ X Web Dashboard login page]({{ site.baseurl }}/assets/images/posts/emq-x-web-dashboard-login.jpg)
 Screenshot: *EMQ X Web Dashboard Login Screen*
 
-![EMQ X Web Dashboard]({{ site.baseurl }}/assets/images/emq-x-web-dashboard.jpg)
+![EMQ X Web Dashboard]({{ site.baseurl }}/assets/images/posts/emq-x-web-dashboard.jpg)
 Screenshot: *EMQ X Web Dashboard UI*
 
 ## Configuration
@@ -307,7 +307,8 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 
 Thanks and Happy Learning!
 
-## Links of other articles in this series
+## Other articles in MQTT / EMQ X  series
 - [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
 - [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
 - [Clustering EMQ X Automatically:static, using a static node list]({{ site.baseurl }}{% post_url 2019-03-23-clustering-emqx-automatically-using-a-static-node-list %})
+- [Load Balancer for EMQ X Cluster]({{ site.baseurl }}{% post_url 2019-03-24-load-balancer-for-emq-x-cluster %})
