@@ -2,7 +2,7 @@
 layout: post
 title:  "How to manually setup EMQX cluster?"
 author: sma
-categories: [ MQTT,EMQ,EMQX,IoT,M2M ]
+categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/agreement-business-clapping-990817.jpg
 description: "How to manually setup EMQ X cluster?"
 tags: [featured]
@@ -21,7 +21,7 @@ Follow the guidelines presented in my previous article [Setup EMQ X broker node 
 | 2 | emqx@192.168.0.32 | 192.168.0.32   |
 | 3 | emqx@192.168.0.33 | 192.168.0.33   |
 
-You can set **node name of EMQ X Broker Node** using teh `node.name` property defined in `/etc/emqx/emqx.conf` configuration file. Following are detailed steps to set the **node name of EMQ X Broker Node**, follow these steps to setup `node.name` property on each member node.
+You can set **node name of EMQ X Broker Node** using the `node.name` property defined in `/etc/emqx/emqx.conf` configuration file. Following are detailed steps to set the **node name of EMQ X Broker Node**, follow these steps to setup `node.name` property on each member node.
 
 1. Connect to *system* with **EMQ X Broker Node** and open terminal.
 2. Open `/etc/emqx/emqx.conf` file for editing.
@@ -151,5 +151,7 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 Thanks and Happy Learning!
 
 ## Links of other articles in this series
-1. [Setup EMQ X broker node on Ubuntu Server]({{ site.baseurl }}{% post_url 2019-03-10-setup-emqx-broker-node-on-ubuntu %})
-2. [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
+## Links of other articles in this series
+- [Setup EMQ X broker node on Ubuntu Server]({{ site.baseurl }}{% post_url 2019-03-10-setup-emqx-broker-node-on-ubuntu %})
+- [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
+- [Clustering EMQ X Automatically:static, using a static node list]({{ site.baseurl }}{% post_url 2019-03-23-clustering-emqx-automatically-using-a-static-node-list %})

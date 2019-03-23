@@ -2,7 +2,7 @@
 layout: post
 title:  "Clustering EMQ X Automatically:k8s, using Kubernetes service API"
 author: sma
-categories: [ MQTT,EMQ,EMQX,IoT,M2M ]
+categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/abstract-ai-art-373543.jpg
 description: "How to setup EMQ X cluster automatically using Kubernetes service API?"
 tags: [featured]

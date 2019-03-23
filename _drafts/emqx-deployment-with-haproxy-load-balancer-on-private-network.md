@@ -2,7 +2,7 @@
 layout: post
 title:  "EMQ X deployment with HAProxy Load Balancer on private network"
 author: sma
-categories: [ MQTT,EMQ,EMQX,IoT,M2M ]
+categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/abstract-ai-art-373543.jpg
 description: "How to deploy EMQ X cluster with HAProxy Load Balancer on private network?"
 tags: [featured]
