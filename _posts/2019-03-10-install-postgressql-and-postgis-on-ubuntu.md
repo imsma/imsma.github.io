@@ -4,7 +4,6 @@ title:  "Install PostgresSQL and PostGIS on Ubuntu"
 author: sma
 categories: [ PostgresSQL, PostGIS, GIS ]
 image: assets/images/posts/gis-map.jpg
-tags: [featured]
 description: "Install PostgresSQL and PostGIS on Ubuntu"
 ---
 
@@ -12,7 +11,7 @@ In this article I will explain how to install [PostGIS](https://postgis.net/) on
 
 Following is step by step tutorial to setup [PostGIS](https://postgis.net/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).
 
-Add Respository to `sources.list`
+Add repository to `sources.list`
 
 ```
 $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt xenial-pgdg main" >> /etc/apt/sources.list'
