@@ -120,6 +120,9 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 ```
 
+**Related Articles**
+- [Understanding Core Concepts of HAProxy as Load Balancer Solution]({{ site.baseurl }}{% post_url 2019-03-25-understanding-core-concepts-of-haproxy-as-load-balancer-solution %}){:target="_blank"}.
+
 
 Thanks for reading. I hope you enjoyed this article. If you like this article, have any questions or suggestions please let us know in the comments section.
 
