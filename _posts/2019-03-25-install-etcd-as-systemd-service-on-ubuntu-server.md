@@ -20,14 +20,14 @@ Download the [latest release](https://github.com/etcd-io/etcd/releases) of **etc
 wget https://github.com/etcd-io/etcd/releases/download/v3.3.12/etcd-v3.3.12-linux-amd64.tar.gz
 ```
 
-Extract the downloaded file *etcd-v3.3.12-linux-amd64.tar.gz* using `tar`(**t**ape **a**rhive) command.
+Extract the downloaded file *etcd-v3.3.12-linux-amd64.tar.gz* using `tar`(**t**ape **ar**chive) command.
 
 ```
 tar xvf etcd-v3.3.12-linux-amd64.tar.gz
 ```
 ## Instal the *etcd* and *etcdctl* executables to */usr/local/bin*
 
-We already have extracted the contents of *etcd-v3.3.12-linux-amd64.tar.gz* to *etcd-v3.3.12-linux-amd64* directory,Now let's install the extracted binaries to */usr/local/bin* directory so that we can execute them globally.
+We already have extracted the contents of *etcd-v3.3.12-linux-amd64.tar.gz* to *etcd-v3.3.12-linux-amd64* directory, now let's install the extracted binaries to */usr/local/bin* directory.
 
 1. Move the `etcd` binary to `/usr/local/bin` directory.
     ```
@@ -53,13 +53,13 @@ Go Version: go1.10.8
 Go OS/Arch: linux/amd64
 ```
 
-Additionally verify the installation of **etcdctl** by running the `etcdctl --version` command.
+Additionally verify installation of **etcdctl** by running `etcdctl --version` command.
 
 ```
 etcdctl --version
 ```
 
-**Output** of the `etcd --version` command.
+**Output** of `etcd --version` command.
 
 ```
 etcdctl version: 3.3.12
@@ -125,34 +125,34 @@ Now let's setup **etcd** *service daemon*.
     WantedBy=multi-user.target
     ```
 
-3. Run the `systemctl daemon-reload` command to load our newly created *unit file* for **etcd* *systemd service*. This will notify *systemd* about newly created *etcd.service* service.
+3. Run the `systemctl daemon-reload` command to load our newly created *unit file* for **etcd** *systemd service*. This will notify *systemd* about newly created *etcd.service* service.
     ```
     sudo systemctl daemon-reload
     ```
-**Note** You will need to execute `ystemctl daemon-reload` command whenever you *modify* the *etcd.service* unit file, otherwise `systemctl start` and `systemctl enable` commands will fail due to mismatch between *etcd.service* unit file on disk and state of *systemd*.
-4. Start the *etcd.service* service using `systemctl start` command.
+**Note** You will need to execute `ystemctl daemon-reload` command whenever you *modify* the *etcd.service* unit file, otherwise `systemctl start` and `systemctl enable` commands will fail due to mismatch between *etcd.service* unit file on disk and currently loaded state of *systemd*.
+4. Start the **etcd** service using `systemctl start` command.
     ```
     sudo systemctl start etcd.service
     ```
-5. Finally, we will use the `systemctl enable` command to make sure that the `etcd.service` starts on *system boot*.
-```
-sudo systemctl enable etcd.service
-```
+5. Finally, we will use the `systemctl enable` command to make sure that the *etcd* service starts on *system boot*.
+    ```
+    sudo systemctl enable etcd.service
+    ```
 
-If `systemctl enable` command was successful the output will be as followimg.
+If `systemctl enable` command was successful the output will be as following.
 
 ```
 Created symlink from /etc/systemd/system/multi-user.target.wants/etcd.service to /etc/systemd/system/etcd.service.
 ```
 
 ### Check etcd *systemd* service status
-We can check current status of *etcd service* using `systemctl status` command. Run `systemctl status` command to get current status of *etcd service*.
+We can check current status of *etcd* service using `systemctl status` command. Run `systemctl status` command to get current status of *etcd service*.
 
 ```
 sudo systemctl status etcd.service
 ```
 
-This will *Output** current status of *etcd service*.
+This will **Output** current status of *etcd service*.
 
 ```
 ● etcd.service - etcd service
@@ -192,7 +192,7 @@ Currently we have setup just one **etcd** node, so we will get following output.
 ```
 
 ## Summary
-We have installed and setup *single node* **etcd** cluster, in my upcoming article I will explain how we can setup **etcd** *multi node cluster*.
+We have installed and setup *single node* **etcd** cluster, in my upcoming article I will explain how to setup **etcd** *multi node* cluster.
 
 Thanks for reading. I hope you enjoyed this article. If you like this article, have any questions or suggestions please let us know in the comments section.
 
