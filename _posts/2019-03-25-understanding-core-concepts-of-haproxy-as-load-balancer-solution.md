@@ -87,7 +87,8 @@ Using **source** *load balancing algorithm*, *backend server* is selected on the
 
 
 **Related Articles**
-[How To Install HAProxy on Ubuntu Linux Server]({{ site.baseurl }}{% post_url 2019-03-25-how-to-install-haproxy-on-ubuntu-linux-server %}).
+
+- [How To Install HAProxy on Ubuntu Linux Server]({{ site.baseurl }}{% post_url 2019-03-25-how-to-install-haproxy-on-ubuntu-linux-server %}).
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
 
