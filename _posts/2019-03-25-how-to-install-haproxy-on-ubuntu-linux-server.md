@@ -121,6 +121,7 @@ defaults
 ```
 
 **Related Articles**
+
 - [Understanding Core Concepts of HAProxy as Load Balancer Solution]({{ site.baseurl }}{% post_url 2019-03-25-understanding-core-concepts-of-haproxy-as-load-balancer-solution %}){:target="_blank"}.
 
 

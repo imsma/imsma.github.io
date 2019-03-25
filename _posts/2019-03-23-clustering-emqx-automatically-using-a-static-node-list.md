@@ -105,3 +105,4 @@ Thanks and Happy Learning!
 - [Understanding EMQ X broker cluster concepts]({{ site.baseurl }}{% post_url 2019-03-22-understanding-emq-x-broker-cluster-concepts %})
 - [How to manually setup EMQ X cluster?]({{ site.baseurl }}{% post_url 2019-03-23-how-to-manually-setup-emqx-cluster %})
 - [Load Balancer for EMQ X Cluster]({{ site.baseurl }}{% post_url 2019-03-24-load-balancer-for-emq-x-cluster %})
+- [EMQ X deployment with HAProxy Load Balancer on private network]({{ site.baseurl }}{% post_url 2019-03-26-emqx-deployment-with-haproxy-load-balancer-on-private-network %})
