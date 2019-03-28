@@ -10,22 +10,62 @@ tags: [featured]
 
 [HAProxy](http://www.haproxy.org) is an *open source* *HTTP / TCP*  proxy solution to create *highly available* systems. *HAProxy* is widely used *open source* *load balancer*, 
 
-In this article I will explain the basic setup of *HAProxy* on *Ubuntu Linux* system.
-
+In this article I will explain the basic setup of *HAProxy 1.8.x* on *Ubuntu Linux* system.
 
 ## Installing HAProxy on Ubuntu Linux Server
 
-Before starting the install process of *HAProxy*, let's update the *apt* repository.
+Please refer to [Uninstalling HAProxy](#uninstalling-haproxy) section, if you want to uninstall any existing installation of *haproxy* package.
 
-```
-sudo apt-get update
-```
-
-Install *HAProxy* using *apt* package manager.
-
-```
-sudo apt-get install haproxy
-```
+1. Add `ppa:vbernat/haproxy-1.8` *apt repository* to system's software source.
+	```
+	sudo add-apt-repository ppa:vbernat/haproxy-1.8
+	```
+2. Update the *apt* repository.
+	```
+	sudo apt-get update
+	```
+3. Verify if *HAProxy version 1.8.X* has been added to available list of installable softwares.
+	```
+	apt-cache policy haproxy
+	```
+	**Output**
+	```
+	haproxy:
+	Installed: (none)
+	Candidate: 1.8.19-1ppa1~xenial
+	Version table:
+		1.8.19-1ppa1~xenial 500
+			500 http://ppa.launchpad.net/vbernat/haproxy-1.8/ubuntu xenial/main amd64 Packages
+		1.6.3-1ubuntu0.2 500
+			500 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+			500 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+			100 /var/lib/dpkg/status
+		1.6.3-1 500
+			500 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 Packages	
+	```
+4. Install *HAProxy* using *apt* package manager. 	
+	```bash
+	sudo apt-get install haproxy
+	```
+3. Run the `apt-cache policy` command again to verify installation of *HAProxy version 1.8.X*.
+	```
+	apt-cache policy haproxy
+	```
+	The line `Installed: 1.8.19-1ppa1~xenial` from following output, confirms 
+	```
+	haproxy:
+	Installed: 1.8.19-1ppa1~xenial
+	Candidate: 1.8.19-1ppa1~xenial
+	Version table:
+	*** 1.8.19-1ppa1~xenial 500
+			500 http://ppa.launchpad.net/vbernat/haproxy-1.8/ubuntu xenial/main amd64 Packages
+			100 /var/lib/dpkg/status
+		1.6.3-1ubuntu0.2 500
+			500 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+			500 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+		1.6.3-1 500
+			500 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 Packages	
+	```
 
 ## Staring and Stopping the HAProxy service
 
@@ -87,7 +127,7 @@ global
 	log /dev/log	local0
 	log /dev/log	local1 notice
 	chroot /var/lib/haproxy
-	stats socket /run/haproxy/admin.sock mode 660 level admin
+	stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
 	stats timeout 30s
 	user haproxy
 	group haproxy
@@ -100,7 +140,9 @@ global
 	# Default ciphers to use on SSL-enabled listening sockets.
 	# For more information, see ciphers(1SSL). This list is from:
 	#  https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
-	ssl-default-bind-ciphers ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS
+	# An alternative list with additional directives can be obtained from
+	#  https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=haproxy
+	ssl-default-bind-ciphers ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:RSA+AESGCM:RSA+AES:!aNULL:!MD5:!DSS
 	ssl-default-bind-options no-sslv3
 
 defaults
@@ -119,6 +161,27 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 ```
+
+## Uninstalling HAProxy
+
+You can use following approaches to remove or uninstall *haproxy* from your Ubuntu system.
+
+1. Run following command to remove just *haproxy* package from ubuntu.
+	```
+	sudo apt-get remove haproxy
+	```
+2. To remove the *haproxy* package along with dependent packages.
+	```
+	sudo apt-get remove --auto-remove haproxy
+	```
+3. Ue the *purge* command, if you also want to delete *configuration* files.
+	```
+	sudo apt-get purge haproxy
+	```
+4. You can delete *configuration* along with data files for *haproxy* as following.
+	```
+	sudo apt-get purge --auto-remove haproxy
+	```
 
 **Related Articles**
 
