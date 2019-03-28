@@ -13,7 +13,7 @@ tags: [featured]
 To get yourself familiar with basic concepts of *HAProxy* and it's installation process please refer to following articles.
 
 - [Understanding Core Concepts of HAProxy as Load Balancer Solution]({{ site.baseurl }}{% post_url 2019-03-25-understanding-core-concepts-of-haproxy-as-load-balancer-solution %}){:target="_blank"}.
-- [How To Install HAProxy on Ubuntu Linux Server]({{ site.baseurl }}{% post_url 2019-03-25-how-to-install-haproxy-on-ubuntu-linux-server %}){:target="_blank"}.
+- [How To Install HAProxy on Ubuntu Linux Server]({{ site.baseurl }}{% post_url 2019-03-27-how-to-install-haproxy-on-ubuntu-linux-server %}){:target="_blank"}.
 
 In my previous article [Clustering EMQ X Automatically:static, using a static node list]({{ site.baseurl }}{% post_url 2019-03-23-clustering-emqx-automatically-using-a-static-node-list %}){:target="_blank"}, I explained how to setup cluster of three EMQX broker nodes *using static node list*. In this article we will add *load balancing* capability to this *cluster* using *HAProxy*. 
 
