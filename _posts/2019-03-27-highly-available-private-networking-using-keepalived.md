@@ -29,23 +29,100 @@ Let's assume we have three server nodes with following IP addresses.
 | srv-2       | 192.168.0.102 |
 | srv-3       | 192.168.0.103 |
 
-## Installing Keepalived
+
+
+
+## Installing Latest version of Keepalived 2.0.14
+
+The version *v1.2.24* of *Keepalived* in *Ubuntu 16.04.4* default *apt repositories* is outdated, the latest available version of *Keepalived* [*v2.0.14*](https://github.com/acassen/keepalived/releases/tag/v2.0.14) was released on *March 25, 2019*. So in this tutorial we will install the *latest version of Keepalived* from source.
+
+### Setup Build Environment for Keepalived
+First of all we will install the *Keepalived* build dependencies.
+
+1. We install `build-essentials` package, this will install different packages required for *build process* in general.
+    ```
+    sudo apt-get install -y build-essential
+    ```
+2. Install `libssl-dev` *SSL libraries*, *Keepalived* requires (`libssl-dev`) as build dependency.
+    ```
+    sudo apt-get install -y libssl-dev
+    ```
+
+### Installing Keepalived
 First of all, setup **Keepalived** on all three *ubuntu servers* using following steps.
 
-1. Update `apt` packages repository.
+1. Download the [latest](http://www.keepalived.org/download.html) available release of *Keepalived*.
     ```
-    sudo apt-get update
+    wget http://www.keepalived.org/software/keepalived-2.0.14.tar.gz
     ```
-2. Install the `keepalived` using `apt` package manager.
+2. Extract the downloaded package using `tar` command. 
     ```
-    sudo apt-get install keepalived
+    tar xzvf keepalived-2.0.14.tar.gz
     ```
-3. Use `systemctl enable` command to enable *auto start on boot* for *keepalived* service.
+3. Above command will extract the contents of `keepalived-2.0.14.tar.gz` file to directory named `keepalived-2.0.14`, change directory to this one.
+    ```
+    cd keepalived-2.0.14
+    ```
+4. Create *Makefiles* file by running the `./configure` shell script.
+    ```
+    ./configure
+    ```
+5. Run the `make` command to generate the executable binaries.
+    ```
+    make
+    ```
+6. Now run the `make install` command to copy the built artifacts to their proper location.
+    ```
+    sudo make install
+    ```
+### Setup Keepalived as systemd service
+In this section we will setup *Keepalived* as *systemd service*.
+
+1. Create *systemd service unit file* for *Keepalived* service.
+    ```
+    sudo nano /etc/systemd/system/keepalived.service
+    ```
+2. Copy following contents into `keepalived.service` file, save file `(Ctrl + O)` and exit the nano editor `(Ctrl + X)`.
+    ```
+    #
+    #  systemd servive unit file for Keepalived 
+    #
+
+    [Unit]
+    Description=Keepalived service for High Availability with LVS and VRRP
+    After=network.target
+    ConditionFileNotEmpty=/etc/keepalived/keepalived.conf
+
+    [Service]
+    Type=simple
+    # Ubuntu/Debian convention:
+    EnvironmentFile=-/etc/default/keepalived
+    ExecStart=/usr/local/sbin/keepalived --dont-fork
+    ExecReload=/bin/kill -s HUP $MAINPID
+    #Define the procedure of killing the processes belonging to the Keepalived service unit.
+    KillMode=process
+
+    [Install]
+    WantedBy=multi-user.target    
+    ```
+3. Enable the *Keepalived* service for auto start on system boot.
     ```
     sudo systemctl enable keepalived
     ```
+    **Output**
+    ```
+    Created symlink from /etc/systemd/system/multi-user.target.wants/keepalived.service to /etc/systemd/system/keepalived.service.  
+    ```
+4. If you try to start *keepalived* service using `sudo service keepalived start` command, it will fail with following status report. Don't worry, this error will get fixed in upcoming sections of this article where we setup configuration files for *Keepalived* *MASTER* and *BACKUP* node. 
+    ```sh
+    ● keepalived.service - Keepalived service for High Availability with LVS and VRR
+    Loaded: loaded (/etc/systemd/system/keepalived.service; enabled; vendor prese
+    Active: inactive (dead)
+    Condition: start condition failed at Sat 2019-03-30 01:07:18 PKT; 4s ago
+            ConditionFileNotEmpty=/etc/keepalived/keepalived.conf was not met    
+    ```
 
-### Managing Keepalived Service
+## Managing Keepalived Service
 
 Keepalived service can be started, stopped and queried for status using `service` command, in this section we will explore how we can manage *Keepalived* service.
 
@@ -92,11 +169,15 @@ To ensure proper network packet forwarding by *Keepalived* service to real serve
 
 In this section we will configure **Keepalived** for *master node*. Connect to first server with IP address *192.168.0.101* to configure it as *keepalived master node*.
 
-1. Open `keepalived.conf` file for editing as following, a new file will be created if doesn't exist.
+1. Create `/etc/keepalived/` configuration directory for *keepalived*.
+    ```
+    sudo mkdir /etc/keepalived/
+    ```
+1. Create file named `keepalived.conf` in `/etc/keepalived/` directory, this file will hold configurations for our *keepalived* service. 
     ```
     sudo nano /etc/keepalived/keepalived.conf
     ```
-2. Add following configuration at the end of  `keepalived.conf` file, save the file and exist editor.
+2. Copy following configuration to the newly created  `keepalived.conf` file, save file `(Ctrl + O)` and exit the nano editor `(Ctrl + X)`.
     ```
     vrrp_instance VI_1 {
         state MASTER
