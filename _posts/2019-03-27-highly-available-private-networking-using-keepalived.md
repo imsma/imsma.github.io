@@ -32,11 +32,11 @@ Let's assume we have three server nodes with following IP addresses.
 
 
 
-## Installing Latest version of Keepalived 2.0.14
+## Installing the latest version of Keepalived 2.0.14
 
 The version *v1.2.24* of *Keepalived* in *Ubuntu 16.04.4* default *apt repositories* is outdated, the latest available version of *Keepalived* [*v2.0.14*](https://github.com/acassen/keepalived/releases/tag/v2.0.14) was released on *March 25, 2019*. So in this tutorial we will install the *latest version of Keepalived* from source.
 
-### Setup Build Environment for Keepalived
+### Setup the build environment for Keepalived
 First of all we will install the *Keepalived* build dependencies.
 
 1. We install `build-essentials` package, this will install different packages required for *build process* in general.
@@ -48,7 +48,7 @@ First of all we will install the *Keepalived* build dependencies.
     sudo apt-get install -y libssl-dev
     ```
 
-### Installing Keepalived
+### Build and Install  Keepalived
 First of all, setup **Keepalived** on all three *ubuntu servers* using following steps.
 
 1. Download the [latest](http://www.keepalived.org/download.html) available release of *Keepalived*.
@@ -143,7 +143,7 @@ Keepalived service can be started, stopped and queried for status using `service
     sudo service keepalived status
     ```
 
-### Configuring IP forwarding 
+### Configuring the IP forwarding 
 
 To ensure proper network packet forwarding by *Keepalived* service to real servers, we need to enable *IP forwarding* on each participant server. Execute following steps on each server to turn on *IP forwarding*.  
 
@@ -165,7 +165,7 @@ To ensure proper network packet forwarding by *Keepalived* service to real serve
     net.ipv4.ip_nonlocal_bind = 1
     ```
 
-## Setup Master Server Node using Keepalived and VRRP
+## Setup Master Server node using Keepalived and VRRP
 
 In this section we will configure **Keepalived** for *master node*. Connect to first server with IP address *192.168.0.101* to configure it as *keepalived master node*.
 
@@ -199,14 +199,14 @@ In this section we will configure **Keepalived** for *master node*. Connect to f
     sudo service keepalived restart
     ```
 
-    **IMPORTANT POINTS TO REMEMBER:**
+    **Important Notes:**
     > Replace "`eth1`" in line "`interface eth1`" with a valid *interface name* as per your system's configuration. You can determine the *interface name* using `ifconfig` command on most linux / unix based systems.
 
     > Replace *IP Address (192.168.0.200)* in section `virtual_ipaddress` with a valid *IP Address* as per your network environment and subnet.
 
     > **virtual_router_id** shall remain the same across all participant server regardless of the *MASTER* or *BACKUP* state.
 
-## Setup Backup Server Node using Keepalived and VRRP
+## Setup Backup Server node using Keepalived and VRRP
 
 In this section we will configure **Keepalived** for first *backup node*. Connect to second server with IP address *192.168.0.102* to configure it as *keepalived backup node*.
 
@@ -245,7 +245,7 @@ In this section we will configure **Keepalived** for first *backup node*. Connec
 
     > `priority` on *backup* / *slave* nodes shall be lower than one defined for *MASTER* node.
 
-## Setup Additional Backup Server Node using Keepalived and VRRP
+## Setup additional Backup Server node using Keepalived and VRRP
 
 In this section we will configure **Keepalived** for second *backup node*. Connect to the third server with IP address *192.168.0.103* to configure it as *keepalived backup node*.
 
@@ -279,7 +279,7 @@ In this section we will configure **Keepalived** for second *backup node*. Conne
 
 
 
-## Test the Failover for Keepalived and VRRP
+## Test the failover for Keepalived and VRRP
 
 We will run simple test using `ping` command to make sure that *highly available environment configured with keepaived and VRRP* is working as required. Please make sure that system used to run following test is not one of three servers used in this tutorial.
 
@@ -301,7 +301,7 @@ We will run simple test using `ping` command to make sure that *highly available
 2. While the above ping command is running, *turn off* the *MASTER node*, you will notice an increase in latency of ping requests and it will go to normal again. This means the *virtual ip address (192.168.0.200)* is now pointing to *BACKUP node*.
 3. If you *turn on* the *MASTER node*, it will take control i.e *virtual ip address (192.168.0.200)* will point back to *MASTER node*.
 
-## Alternative Test using web server
+## Alternative test using web server
 You can also perform the *Keepalived* failover test using *web servers* as following.
 
 1. Deploy simple web server like *apache httpd* on all three servers.
