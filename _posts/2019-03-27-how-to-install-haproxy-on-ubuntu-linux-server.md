@@ -4,7 +4,7 @@ title:  "How To Install HAProxy on Ubuntu Linux Server"
 author: sma
 categories: [ HAProxy, Linux, LoadBalancer, ReverseProxy ]
 image: assets/images/posts/access-blurred-background-cable-1629299.jpg
-description: "How To Install HAProxy on Ubuntu Linux Server."
+description: "How To Install Latest Version of HAProxy 1.8.9 LTS on Ubuntu Linux Server?"
 tags: [featured]
 ---
 
@@ -45,7 +45,7 @@ Please refer to [Uninstalling HAProxy](#uninstalling-haproxy) section, if you wa
 	```
 4. Install *HAProxy* using *apt* package manager. 	
 	```bash
-	sudo apt-get install haproxy
+	sudo apt-get install -y haproxy
 	```
 3. Run the `apt-cache policy` command again to verify installation of *HAProxy version 1.8.X*.
 	```
