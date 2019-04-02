@@ -1,46 +1,27 @@
 ---
 layout: post
-title:  "Install PostgresSQL and PostGIS on Ubuntu"
+title:  "How to install PostgresSQL 11 with PostGIS 2.5 on Ubuntu Linux?"
 author: sma
 categories: [ PostgresSQL, PostGIS, GIS ]
 image: assets/images/posts/gis-map.jpg
-description: "Install PostgresSQL and PostGIS on Ubuntu"
+description: "How to install PostgresSQL 11 with PostGIS 2.5 on Ubuntu Linux?"
 ---
+
+**PostGIS** is an extension for **PostgresSQL** to enable *Spatial and Geographic* features, *PostGIS* enables *PostgresSQL* to execute *location queries*.
 
 In this article I will explain how to install [PostGIS](https://postgis.net/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).
 
-Following is step by step tutorial to setup [PostGIS](https://postgis.net/) on [Ubuntu 16.04 LTS Server](http://releases.ubuntu.com/16.04/).
+## Installing PostgresSQL 11
 
-Add repository to `sources.list`
+Please follow my tutorial [How to install PostgresSQL 11 on Ubuntu Server?]({{ site.baseurl }}{% post_url 2019-03-10-install-postgressql-and-postgis-on-ubuntu %}) for detailed instruction to install *PostgresSQL 11* on *Ubuntu linux*.
 
-```
-$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt xenial-pgdg main" >> /etc/apt/sources.list'
-```
 
-Run the following command to add the key to the list of trusted keys.
+Install **PostGis 2.5** for *PostgresSQL 11* using *apt package manager* as following.
 
 ```
-$ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+sudo apt install postgresql-11-postgis-2.5 
 ```
 
-Update the package lists.
+This was a step by step guide to install *PostGIS 2.5 with PostgresSQL 11 server* on *Ubuntu linux* machine. You like this article, have any questions or suggestions please let us know in the comments section.
 
-```
-$ sudo apt update
-```
-Install **PostgresSQL**
-
-```
-$ sudo apt install postgresql-10
-```
-Install **PostGIS 2.4** by running following command.
-
-```
-$ sudo apt install postgresql-10-postgis-2.4 
-```
-
-Run following command to install **PostGIS** scripts for **PostgresSQL**.
-
-```
-$ sudo apt install postgresql-10-postgis-scripts
-```
+Thanks and Happy Learning.
