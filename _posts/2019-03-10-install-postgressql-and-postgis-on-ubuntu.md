@@ -13,7 +13,7 @@ In this article I will explain how to install [PostGIS](https://postgis.net/) on
 
 ## Installing PostgresSQL 11
 
-Please follow my tutorial [How to install PostgresSQL 11 on Ubuntu Server?]({{ site.baseurl }}{% post_url 2019-03-10-install-postgressql-and-postgis-on-ubuntu %}) for detailed instruction to install *PostgresSQL 11* on *Ubuntu linux*.
+Please follow my tutorial [How to install PostgresSQL 11 on Ubuntu Server?]({{ site.baseurl }}{% post_url 2019-03-10-install-postgressql-11-on-ubuntu-server %}) for detailed instruction to install *PostgresSQL 11* on *Ubuntu linux*.
 
 
 Install **PostGis 2.5** for *PostgresSQL 11* using *apt package manager* as following.
