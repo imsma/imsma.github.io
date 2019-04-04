@@ -39,7 +39,7 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
 Run following command to verify contents of repository file.
 
 ```
-$ cat /etc/apt/sources.list.d/pgdg.list
+cat /etc/apt/sources.list.d/pgdg.list
 ```
 
 
