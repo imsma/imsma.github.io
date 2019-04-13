@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "How to manually setup EMQX cluster?"
+title:  "How to manually setup EMQ/EMQ X cluster?"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/agreement-business-clapping-990817.jpg
-description: "How to manually setup EMQ X cluster?"
+description: "How to manually setup EMQ/EMQ X cluster?"
 ---
 
-In this article we will explore how to setup *EMQ X Broker Cluster* manually using *CLI (Command Line Interface)*. We will create *EMQX broker cluster* of 3 nodes.
+EMQ X is a Scalable Distributed MQTT Messaging Broker for IoT, IIoT, M2M and Mobile Applications. In this article we will explore how to setup *EMQ X Broker Cluster* manually using *CLI (Command Line Interface)*. We will create *EMQ X broker cluster* of 3 nodes.
 
 ## 1. Setup EMQ X Broker Nodes
 
