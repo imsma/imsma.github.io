@@ -5,7 +5,6 @@ author: sma
 categories: [ HAProxy, Linux, LoadBalancer, ReverseProxy ]
 image: assets/images/posts/access-blurred-background-cable-1629299.jpg
 description: "How To Install Latest Version of HAProxy 1.8.9 LTS on Ubuntu Linux Server?"
-tags: [featured]
 ---
 
 [HAProxy](http://www.haproxy.org) is an *open source* *HTTP / TCP*  proxy solution to create *highly available* systems. *HAProxy* is widely used *open source* *load balancer*, 

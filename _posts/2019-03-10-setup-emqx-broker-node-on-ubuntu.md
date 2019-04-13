@@ -4,12 +4,12 @@ title:  "Setup EMQ X broker node on Ubuntu Server"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/city-downtown-light.jpg
-description: "Setup EMQX broker node on Ubuntu Server"
+description: "Setup EMQ X broker node on Ubuntu Server"
 ---
 
-[EMQX](https://www.emqx.io/) a distributed, highly available and highly scalable message broker. **EMQX** is designed and built using [Erlang/OTP](https://github.com/erlang/otp), and supports all major **IoT** protocols to develop scalable solutions for **M2M** and **mobile application** messaging.
+[EMQ X](https://www.emqx.io/) a distributed, highly available and highly scalable message broker. **EMQ X** is designed and built using [Erlang/OTP](https://github.com/erlang/otp), and supports all major **IoT** protocols to develop scalable solutions for **M2M** and **mobile application** messaging.
 
-Following steps will help you setup **EMQX** broker on **Ubuntu Server**.
+Following steps will help you setup **EMQ X** broker on **Ubuntu Server**.
 
 ## Install erlang 
 
@@ -28,7 +28,7 @@ $ wget https://www.emqx.io/downloads/broker/v3.0.0/emqx-ubuntu16.04-v3.0.0_amd64
 ```
 
 
-## Install the EMQX deb package
+## Install the EMQ X deb package
 
 ```
 $ sudo dpkg -i emqx-ubuntu16.04-v3.0.0_amd64.deb

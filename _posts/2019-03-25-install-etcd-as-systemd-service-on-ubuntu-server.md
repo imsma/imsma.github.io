@@ -81,7 +81,7 @@ In this section we will setup directories to store **etcd** *configuration* and 
 
 ## Install etcd as *systemd* service
 
-In this section we will setup **etcd** as **systemd daemon** so that i can be started with *system startup*.
+In this section we will setup **etcd** as **systemd daemon** so that it can be started with *system startup*.
 
 Before configuring **etcd** as *systemd service*, let's create *etcd system  group and user*. 
 

@@ -37,7 +37,7 @@ Open the `pom.xml` file and add `jackson-databind` dependency under `dependencie
 </dependency>
 ```
 
-Following listing shows the contents `pom.ml` file.
+**Complete contents of `pom.xml` file.**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
