@@ -12,7 +12,7 @@ In this article we will explore how to deploy any executable Java JAR / WAR file
 ## What is Systemd?
 Systemd is a system and service manager for Linux operating systems
 
-In **Linux operating systems**, *Systemd* is used to manager system and services. *Systemd* uses configuration files known as *systemd unit files* to create a *linux daemon*. Some of common *systemd unit types* include.
+In **Linux operating systems**, *Systemd* is used to manage system and services. *Systemd* uses configuration files known as *systemd unit files* to create a *linux daemon*. Some of common *systemd unit types* include.
 - **Service Unit** : A unit file (with *.service* file extension) used to create system service.
 - **Automount Unit** : A unit file (with *.automount* file extension) used to create auto-mount point.
 - **Timer Unit** : A unit file (with *.timer* file extension) used to create systemd timer.
@@ -36,9 +36,9 @@ We will place our configuration files under `/etc/` directory, let's create *con
 sudo mkdir /etc/myapp
 ```
 
-## Environment file file for systemd service
+## Environment file for systemd service
 
-We can set *environment variables* for *systemd service unit* using `Environment` configuration option. To avoid lengthy list of *environment variables* within *service unit file*, we can store all the *environment variables* in a separate *environment file* that can be pointed using *EnvironmentFile* directive in *service unit file*. The key advantage of using *environment file* is the ability to dynamic injection of configuration without having to run *daemon-reload* command. Let's create the *environment file* for our service with the service configuration directory `/etc/myapp`.
+We can set *environment variables* for *systemd service unit* using `Environment` configuration option. To avoid lengthy list of *environment variables* within *service unit file*, we can store all the *environment variables* in a separate *environment file* that can be pointed using *EnvironmentFile* directive in *service unit file*. The key advantage of using *environment file* is dynamic injection of configuration without having to run *daemon-reload* command. Let's create the *environment file* for our service with the service configuration directory `/etc/myapp`.
 
 ```
 sudo nano /etc/myapp/environmentfile
@@ -141,9 +141,9 @@ sudo service myapp status
 
  `StandardOutput=journal` and `StandardError=journal`options in our *service unit file* will enable us to view logs emitted by our program `myapp` using `journalctl` command as following.
 
-    ```
-    journalctl -u myapp.service 
-    ```
+```
+journalctl -u myapp.service 
+```
 
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.

@@ -1,0 +1,27 @@
+{
+  "name": "imsma.github.io",
+  "version": "1.0.0",
+  "description": "SMA Blog",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imsma/imsma.github.io.git"
+  },
+  "keywords": [
+    "SMA",
+    "Blog"
+  ],
+  "author": "Shaukat Mahmood Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imsma/imsma.github.io/issues"
+  },
+  "homepage": "https://www.sma.im",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-shell": "^0.7.0"
+  }
+}
