@@ -12,6 +12,18 @@ tags: [featured]
 
 *Virtual environment* helps to create a *sandbox* by isolating dependencies required by a specific *python* project. As a result each python project can have an isolated environment / sandbox with it's own dependencies, regardless of the decencies a-viable elsewhere on the same system.
 
+## Why Use Virtual Environment?
+
+
+
+In this section I will list some of reasons and benefits of creating and managing multiple virtual environments for *Python* development.
+
+1. Major operating systems like *macOS* come with pre-installed version of *Python*, however the version installed with OS might be an older one and in some cases upgrading this default installation 
+my compromise the proper working on system components. 
+2. With default global installation using *pip*, it's not possible to install different packages with 
+3. *Virtual envionrmet* enables you to use different version of a same package for different projects.
+4. By default *pip* installs the *python packages* globally, this may result in conflicts.
+same name. However *virtual environment* makes it easy to install packages within the project sandbox.
 
 ## Installing Python
 
@@ -130,6 +142,10 @@ django-simple-math-captcha (1.0.8)   - An easy-to-use math field/widget captcha 
 ## References
 1. [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
 
+
+## Programming with Python Series
+
+1. [Understanding Python Programming Language]({{ site.baseurl }}{% post_url 2019-06-09-understanding-python-programming-language %})
 
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
