@@ -75,6 +75,11 @@ In next section we explore different approaches to execute Python code.
 ## References
 1. [What is Python? Executive Summary](https://www.python.org/doc/essays/blurb/){:target="_blank"}
 
+---
+
+*This article is part of **Python Programming, IoT, Big Data, Data Science, AI and Machine Learning Tutorials Series**, please [click here]({{ site.baseurl }}{% post_url 2019-06-02-python-programming-iot-big-data-data-science-ai-and-machine-learning-tutorials-series %}){:target="_blank"} to visit the complete list of articles and tutorials in this series.*
+
+---
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
 
