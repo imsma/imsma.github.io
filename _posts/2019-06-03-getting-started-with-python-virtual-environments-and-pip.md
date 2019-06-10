@@ -21,13 +21,13 @@ In this section I will list some of reasons and benefits of creating and managin
 1. Major operating systems like *macOS* come with pre-installed version of *Python*, however the version installed with OS might be an older one and in some cases upgrading this default installation 
 my compromise the proper working on system components. 
 2. With default global installation using *pip*, it's not possible to install different packages with 
-3. *Virtual envionrmet* enables you to use different version of a same package for different projects.
+3. *Virtual environment* enables you to use different version of a same package for different projects.
 4. By default *pip* installs the *python packages* globally, this may result in conflicts.
 same name. However *virtual environment* makes it easy to install packages within the project sandbox.
 
 ## Installing Python
 
-I prefer *Python's Anaconda distribution*, you can follow [official documentation](https://docs.anaconda.com/anaconda/install/){:target="_blank"} to install it on different platforms. AAlternatively you can get [latest official python distribution](https://www.python.org/downloads/release/python-373/){:target="_blank"} for different platforms. 
+I prefer *Python's Anaconda distribution*, you can follow [official documentation](https://docs.anaconda.com/anaconda/install/){:target="_blank"} to install it on different platforms. Alternatively you can get [latest official python distribution](https://www.python.org/downloads/release/python-373/){:target="_blank"} for different platforms. 
 
 ## Installing virtualenv
 
@@ -142,11 +142,11 @@ django-simple-math-captcha (1.0.8)   - An easy-to-use math field/widget captcha 
 ## References
 1. [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
 
+---
 
-## Programming with Python Series
+*This article is part of **Python Programming, IoT, Big Data, Data Science, AI and Machine Learning Tutorials Series**, please [click here]({{ site.baseurl }}{% post_url 2019-06-02-python-programming-iot-big-data-data-science-ai-and-machine-learning-tutorials-series %}){:target="_blank"} to visit the complete list of articles and tutorials in this series.*
 
-1. [Understanding Python Programming Language]({{ site.baseurl }}{% post_url 2019-06-09-understanding-python-programming-language %})
-
+---
 
 That's it, hope you enjoyed it. You like this article, have any questions or suggestions please let us know in the comments section.
 
