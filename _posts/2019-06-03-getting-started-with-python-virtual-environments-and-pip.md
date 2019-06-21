@@ -5,7 +5,6 @@ author: sma
 categories: [ Python ]
 image: assets/images/posts/fabian-grohs-423591-unsplash.jpg
 description: "Python: Getting Started with Python Virtual Environments and pip"
-tags: [featured]
 ---
 
 ## What Is Python Virtual Environment and why we need it?

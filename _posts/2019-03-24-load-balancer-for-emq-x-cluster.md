@@ -5,7 +5,6 @@ author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/blur-computer-connection-442150.jpg
 description: "Load Balancer for EMQ X Cluster."
-tags: [featured]
 ---
 
 Load balancing is used to distribute network load among multiple components or software systems. **Load Balancers** support for different load balancing algorithms like *roundrobin*, *random*, *by weight* etc maximizes utilization of *cluster nodes* and reduces the chances of *service unavailability* due to *over loading* of some *member nodes*.

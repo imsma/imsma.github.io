@@ -5,7 +5,6 @@ author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/cables-close-up-connection-159304.jpg
 description: "How to setup EMQ X cluster automatically using a static node list?"
-tags: [featured]
 ---
 
 The simplest way to automatically create **EMQ X Broker cluster** is to use configure list of *static nodes* on each *member node* of **EMQ X Broker cluster**.
