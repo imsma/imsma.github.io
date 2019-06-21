@@ -5,7 +5,6 @@ author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/abstract-ai-art-373543.jpg
 description: "Understanding EMQ X broker cluster concepts"
-tags: [featured]
 ---
 
 [EMQX](https://www.emqx.io/) a distributed, highly available and highly scalable message broker. **EMQX** is designed and built using [Erlang/OTP](https://github.com/erlang/otp). In this article I will explain how to setup *EMQ Cluster* manually. 
