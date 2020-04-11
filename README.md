@@ -31,4 +31,6 @@ This blog will primarily target following areas.
 _Happy Learning._
 
 **SMA**
-
+```
+bundle exec jekyll serve --incremental
+```

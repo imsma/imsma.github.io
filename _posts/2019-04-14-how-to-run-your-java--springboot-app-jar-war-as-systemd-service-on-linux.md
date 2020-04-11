@@ -7,7 +7,7 @@ image: assets/images/posts/java-1.jpg
 description: "How to run your Java / Spring Boot App / Jar / WAR as Systemd Service on Linux?"
 ---
 
-In this article we will explore how to deploy any executable Java JAR / WAR file as *linux systemd service*.
+This article walks you through the process of deploying **Java** *JAR* or *WAR* package file on *linux* operating system  as *systemd service*. Please note that we will discuss the generic method of *JAR / WAR* deployment regardless of the underlaying framework or programming language available on JVM stack, so this guide is applicable to deployment of artifacts produced with frameworks like *Spring*, *Spring Boot*, *Grails* and *Dropwizard* and languages including *Java* , *Scala* and *Kotlin*. 
 
 ## What is Systemd?
 Systemd is a system and service manager for Linux operating systems
