@@ -7,6 +7,12 @@ image: assets/images/posts/server-grid.jpg
 description: "Install MySQL 5.7 on Ubuntu Server"
 ---
 
+
+## Introduction
+
+
+
+
 In this article I will guide you how to install [**MySQL 5.7**](https://dev.mysql.com/downloads/mysql/5.7.html) on **Ubuntu Linux Server**.
 
 
