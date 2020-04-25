@@ -25,9 +25,15 @@ layout: default
 					</div>
 				</div>
                 {% if page.image %}
-				<div class="col-md-6 pr-0 align-self-center">
+				<!-- <div class="col-md-6 pr-0 align-self-center">
 					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
-				</div>
+				</div> -->
+				<figure class="figure">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
+					{% if page.imageAttribution %}
+					<figcaption class="figure-caption text-right">{{ page.imageAttribution }}</figcaption>
+					{% endif %}
+				  </figure>				
                 {% endif %}
 			</div>
 		</div>
