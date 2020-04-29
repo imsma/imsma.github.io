@@ -7,7 +7,7 @@ This blog will primarily target following areas.
 -	Software Architecture and Design
 -	Programming Languages like C/C++, Java, C#, Python and JavaScript.
 -	Distributed Computing, Cloud Computing, Concurrency, Scalable Systems and Microservices.
--	Industrial Automation, IoT, IIot, Industry 4.0, Big Data, Artificial Intelligence, Machine Learning, Deep Learning, Data Science and Analytics.
+-	Industrial Automation, IoT, IIoT, Industry 4.0, Big Data, Artificial Intelligence, Machine Learning, Deep Learning, Data Science and Analytics.
 -	Enterprise Integration
 -	GIS and Location Aware Systems.
 -	Agile and DevOps
@@ -41,8 +41,3 @@ bundle exec jekyll serve --incremental
 bundle exec jekyll serve --incremental --draft
 ```
 
-
-> Temp snapshot
-Recently I became interested in online trading, forex and stock market. Before making any particle move, I started searching for some good resources to learn about it. I found that XM trading has posted some good educational videos on YouTube, **Disclaimer** *I have no official affiliation with XM trading*. 
-
-I started taking notes while watching the XM trading educational videos and thought it best to share my notes with other folks interested in online trading. This is the first article in this series and I will include the original video at the end of this article. So let's start.
