@@ -16,10 +16,10 @@ A step by step series of articles, tutorials and walkthroughs that will help you
 
 
 ##### 1. Learn web design and development | Introduction to HTML / HTML5
-Understanding basic of HTML, HTML document structure and web pages, [read more]({{ site.baseurl }}{% post_url 2020-04-15-investment-trading-101-introduction--to-trading %}).
+Understanding basic of HTML, HTML document structure and web pages, [read more]({{ site.baseurl }}{% post_url 2020-05-02-learn-web-design-and-development-introduction-to-html-html5 %}).
 
 ##### 2. Introduction to Web Design - CSS and CSS3
-In this article we will learn the basics of CSS / CSS3, a technology to style your webpages, [read more]({{ site.baseurl }}{% post_url 2020-04-29-introduction-to web design css and css3 %}).
+In this article we will learn the basics of CSS / CSS3, a technology to style your webpages, [read more]({{ site.baseurl }}{% post_url 2020-04-29-introduction-to-web-design-css-and-css3 %}).
 
 
 Thanks and Happy Learning!
