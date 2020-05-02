@@ -4,6 +4,7 @@ title:  "New Post"
 author: sma
 categories: [ MQTT,EMQX,IoT,M2M ]
 image: assets/images/posts/art-board-game-challenge-163064.jpg
+imageAttribution: 
 description: "New Post"
 tags: [featured]
 ---
