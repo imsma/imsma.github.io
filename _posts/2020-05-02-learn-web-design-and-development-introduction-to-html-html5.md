@@ -155,4 +155,4 @@ That's it, hope you enjoyed it. You like this article, have any questions or sug
 Thanks and Happy Learning!
 
 ---
-This article is part of [Web Design and Development]({{ site.baseurl }}{% post_url 2020-05-02-learning-web-design-and-development-series %}) series.
+This article is part of [Web Design and Development]({{ site.baseurl }}{% post_url 2020-04-28-learning-web-design-and-development-series %}) series.
