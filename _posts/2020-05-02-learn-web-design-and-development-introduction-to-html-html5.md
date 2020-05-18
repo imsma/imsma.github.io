@@ -11,7 +11,7 @@ tags: [featured]
 
 ## What is HTML 
 
-**H**yper **T**ext **M**arkup **L**anguage *a.k.a* **HTML** is a markup language used to define the structure of web content (web pages). HTML is not a programming language in other words HTML can not be used build any kind of logic. As explained earlier HTML is used to define the structure of web content or web pages, this structure is defined with the help of elements or tags like *paragraph*, *heading*, *list*, *link* or *image*.  These HTML tags are written in format of plain text file which is then rendered by a *web browser (software application program used to display web pages or web content)*. **HTML 5** is the current version  of HTML, *HTML5* was released in 2014 which replaced a very long lived (almost 14 years) HTML4.
+**H**yper **T**ext **M**arkup **L**anguage *a.k.a* **HTML** is a markup language used to define the structure of web content (web pages). HTML is not a programming language i,e. it can't be used to build logic like computer programming languages do. HTML is a markup language that is used to define the structure of web content or web pages, this structure is defined with the help of elements or tags like *paragraph*, *heading*, *list*, *link* or *image*.  These HTML tags are written in format of plain text file which is then rendered by a *web browser (software application program used to display web pages or web content)*. **HTML 5** is the current version  of HTML, *HTML5* was released in 2014 which replaced a very long lived (almost 14 years) HTML4.
 
 
 ## Understanding Basic HTML Document
